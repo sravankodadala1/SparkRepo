@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 from utils import join_dataframe, loc_unique, prod_user, total_spending_user
-def Spark_Session():
+def Spark_Session(): 
     spark = SparkSession.builder.appName("Spark_assignment_1").getOrCreate()
     return spark
 def users_data(spark, user_csv_path, header=True, inferSchema=True):
