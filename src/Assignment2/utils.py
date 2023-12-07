@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import split, col, hour
 import logging
 
-logging.basicConfig(
+logging.basicConfig( 
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s"
 )
