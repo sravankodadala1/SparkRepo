@@ -1,6 +1,6 @@
 from src.Assignment2.utils import *
 
-spark = create_spark_session()
+spark = create_spark_session() 
 
 filepath = "C:/Users/sravan/Downloads/ghtorrent-logs.txt"
 rdd = create_rdd(spark, filepath)
