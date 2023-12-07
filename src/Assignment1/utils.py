@@ -2,7 +2,7 @@ from pyspark.sql.functions import countDistinct, collect_set, sum, col
 
 def join_dataframe(user_df, transaction_df, user_id_col, transaction_user_id_col):
     join_df = transaction_df.join(user_df, user_df[user_id_col] == transaction_df[transaction_user_id_col], "inner")
-    return join_df
+    return join_df 
 
 def loc_unique(join_df, product_description_col, location_col):
     unique_locations = join_df.groupBy(product_description_col, location_col).agg(
