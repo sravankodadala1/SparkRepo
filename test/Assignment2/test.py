@@ -4,7 +4,7 @@ from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 from src.assignment_2.utils import *
 
 class TestSparkAssignment(unittest.TestCase):
-    def setUp(self):
+    def setUp(self): 
         self.spark = spark_session()
         self.filepath = "C:/Users/sravan/Downloads/ghtorrent-logs.txt"
         self.rdd = creating_rdd(self.spark, self.filepath)
